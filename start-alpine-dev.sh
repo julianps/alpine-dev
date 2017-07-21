@@ -1,7 +1,19 @@
 #!/bin/bash
-docker stop jps-alpine-dev
-docker rmi jps/alpine -f
-docker build . -t jps/alpine
-docker rm jps-alpine-dev
-docker run -d --name jps-alpine-dev jps/alpine
-docker exec -ti jps-alpine-dev /bin/sh
+
+# Set some properties
+container_name="jps-alpine-dev"
+image_name="jps/alpine"
+
+# Cleanup
+docker stop $container_name 
+docker rmi $image_name -f
+docker rm $container_name
+
+# Build image
+docker build . -t $image_name 
+
+# Start container from image 
+docker run -d --name $container_name $image_name 
+
+# Connect to container
+docker exec -ti $container_name /bin/sh

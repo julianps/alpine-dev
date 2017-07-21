@@ -1,6 +1,3 @@
-# alpine-dev
-A mini-docker project, providing an alpine docker container to play around in the running container.
-
 # Installation
 
 ```git clone https://github.com/julianps/alpine-dev.git```

@@ -19,7 +19,7 @@ container_name="jps-alpine-dev"
 image_name="jps/alpine"
 ```
 
-finally execute './start-alpine-dev.sh'
+finally execute `./start-alpine-dev.sh`
 
 # Conveniance
 

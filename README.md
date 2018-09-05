@@ -1,3 +1,7 @@
+# Preconditions 
+
+- Docker is installed on the maschine
+
 # Installation
 
 ```git clone https://github.com/julianps/alpine-dev.git```

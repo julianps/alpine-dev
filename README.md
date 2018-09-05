@@ -19,6 +19,8 @@ container_name="jps-alpine-dev"
 image_name="jps/alpine"
 ```
 
+finally execute './start-alpine-dev.sh'
+
 # Conveniance
 
 add the following to your `~/.bash_profile` and change the $LOCATION, to start the container with the command `alpine` from the commandline.
